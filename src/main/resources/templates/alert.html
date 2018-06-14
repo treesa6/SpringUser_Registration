@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Email ID exists!</title>
+<style>p {color:blue;}
+a {color:purple; }
+h1 {color:maroon;}
+legend {color:red}</style>
+
+</head>
+<body>
+<h1>Invalid User!</h1>
+<fieldset>
+    <legend style="font-size:30px"  {color:red;}> Sorry, the user can't be added! </legend>
+	<p style="font-size:30px" th:text="'The Email Address: ' + ${UserDetails.emailID} + ' already exists! Please try a differnet one.'" /> 
+ <a style="font-size:20px" href="javascript:history.back()">Go Back</a> 
+<a  style="font-size:20px" href="allUsers"> Show all registered Users</a>
+ </fieldset>
+</body>
+<details>
+  <summary>Copyright 2018-2024.</summary>
+  <p> - by Treesa Sunny. All Rights Reserved.</p>
+  <p>All content and graphics on this web site are the property of the company Treesa Sunny.</p>
+</details>
+</html>

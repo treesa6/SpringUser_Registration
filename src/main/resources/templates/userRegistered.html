@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration</title>
+<style>h2 {color:green;}
+p {color:purple; }</style>
+</head>
+<body>
+<h2>Congratulations!</h2>
+<fieldset>
+
+    <legend style="font-size:25px"> User Details sucessfully Added!</legend>
+	<p th:text="'First Name: ' + ${UserDetails.firstname}" />
+	<p th:text="'Last Name: ' + ${UserDetails.lastName}" />
+	<p th:text="'Email Address: ' + ${UserDetails.emailID}" />	
+	<a style="font-size:20px" href="javascript:history.back()">Add another user!</a> 
+	<a style="font-size:20px" href="allUsers"> Show all registered Users</a>
+</fieldset>	
+	
+</body>
+<details>
+  <summary>Copyright 2018-2024.</summary>
+  <p> - by Treesa Sunny. All Rights Reserved.</p>
+  <p>All content and graphics on this web site are the property of the company Treesa Sunny.</p>
+</details>
+</html>

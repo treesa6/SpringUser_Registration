@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<style>
+h1 {color:maroon;}
+p {color:blue;}
+a {color:purple}
+
+
+</style>
+	<meta charset="ISO-8859-1">
+	 <link href="/css/main.css" rel="stylesheet">
+ 	<meta charset="UTF-8">
+	<title>Test form</title>
+</style>
+</head>
+<body>
+<frameset rows="100%">
+  <frame src="frame_b.htm">
+</frameset>
+<h1>User Registration Form</h1>
+
+</head>
+<body>
+
+
+ <form action="#" th:action="@{/home}" th:object="${UserDetails}" method="post">
+
+  <fieldset>
+    <legend "font-size:30px">Enter the user details:</legend>
+    	<p  align="justify"> First Name: &nbsp; &nbsp; &nbsp; &nbsp;<input type="text" th:field="*{firstname}" /></p>
+        <p align="justify"> Last Name: &nbsp; &nbsp; &nbsp; &nbsp; <input type="text" th:field="*{lastName}" /></p>
+        <p align="justify"> Email Address: &nbsp; <input type="text" th:field="*{emailID}" /></p>
+        <p align="justify"><input type="submit" value="Add User" /> <input type="reset" value="Reset" /></p>
+      	<a href="allUsers"> Show all registered Users</a>
+       </fieldset>
+
+    </form>
+</body>
+
+<details>
+  <summary>Copyright 2018-2024.</summary>
+  <p> - by Treesa Sunny. All Rights Reserved.</p>
+  <p>All content and graphics on this web site are the property of the company Treesa Sunny.</p>
+</details>
+</html>
