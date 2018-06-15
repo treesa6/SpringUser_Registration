@@ -44,8 +44,6 @@ public class RegisterNewUsersApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		 System.out.println("Our DataSource is = " + dataSource);
-	     
-		 // logger.info("Student id 1 -> {}", userRepository.findById(1));
 		  
 		
 	}
