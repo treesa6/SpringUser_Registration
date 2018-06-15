@@ -69,11 +69,7 @@ public class DefaultController {
 	         String info = String.format("User details: firstname = %s, lastName = %s, Email Address= %s",
 	        		 UserDetails.getFirstname(), UserDetails.getLastName(), UserDetails.getEmailID());
 	         System.out.println(info);
-	         
-	        
-	         
-	 
-			  userRepository.saveUserDetails(UserDetails);
+	         userRepository.saveUserDetails(UserDetails);
 	         return "userRegistered";
     	  }
     }
